@@ -13,7 +13,7 @@ from llama_index.llms.openai import OpenAI
 # Cache the document loading
 @st.cache_data
 def load_documents():
-    return SimpleDirectoryReader("/Users/ashvi/Documents/Canvass/healthcare/pdf_patients").load_data()
+    return SimpleDirectoryReader("data/").load_data()
 
 documents = load_documents()
 
