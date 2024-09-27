@@ -6,25 +6,9 @@ from llama_index.core.graph_stores import SimpleGraphStore
 
 from llama_index.llms.openai import OpenAI
 from llama_index.core import Settings
-from IPython.display import Markdown, display
 from llama_index.core import PropertyGraphIndex
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.llms.openai import OpenAI
-
-# documents = SimpleDirectoryReader("/Users/ashvi/Documents/Canvass/healthcare/pdf_patients").load_data()
-
-# index = PropertyGraphIndex.from_documents(
-#     documents,
-#     llm=OpenAI(model="gpt-4o", temperature=0),
-#     embed_model=OpenAIEmbedding(model_name="text-embedding-3-small"),
-#     # show_progress=True,
-# )
-# # # 
-
-# query_engine = index.as_query_engine(
-#     include_text=True,
-# )
-
 
 # Cache the document loading
 @st.cache_data
