@@ -64,7 +64,7 @@ with st.sidebar:
   )
   if st.session_state['selected_patient'] != patient:
         st.session_state['responses'] = []  # Clear previous responses
-        st.session_state['question'] = ""  # Clear previous responses
+        st.session_state['question'] = ""  
         st.session_state['selected_patient'] = patient 
 
 
